@@ -1,0 +1,29 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+  fleetmanager.api:
+    build:
+      context: C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager
+      dockerfile: FleetManager.Api\Dockerfile
+    depends_on:
+      redis:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: fleetmanagerapi
+    ports:
+    - published: 8000
+      target: 80
+    volumes:
+    - C:\Users\Celil Ercan\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Celil Ercan\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  kibana:
+    image: kibana
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+    - published: 6379
+      target: 6379
+    restart: always
+version: '3.4'

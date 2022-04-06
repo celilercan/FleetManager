@@ -1,0 +1,12 @@
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\bin\Debug\net5.0\FleetManager.Common.deps.json
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\bin\Debug\net5.0\FleetManager.Common.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\bin\Debug\net5.0\ref\FleetManager.Common.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\bin\Debug\net5.0\FleetManager.Common.pdb
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\FleetManager.Common.csproj.AssemblyReference.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\FleetManager.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\FleetManager.Common.AssemblyInfoInputs.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\FleetManager.Common.AssemblyInfo.cs
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\FleetManager.Common.csproj.CoreCompileInputs.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\FleetManager.Common.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\ref\FleetManager.Common.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Common\obj\Debug\net5.0\FleetManager.Common.pdb

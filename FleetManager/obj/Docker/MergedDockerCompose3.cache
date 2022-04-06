@@ -1,0 +1,52 @@
+services:
+  elasticsearch:
+    image: elastic
+  fleetmanager.api:
+    build:
+      context: C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager
+      dockerfile: FleetManager.Api\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: FleetManager.Api
+      target: base
+    container_name: FleetManager.Api
+    depends_on:
+      redis:
+        condition: service_started
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: fleetmanagerapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "C:\app\bin\Debug\net5.0\FleetManager.Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - published: 8000
+      target: 80
+    volumes:
+    - C:\Users\Celil Ercan\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Celil Ercan\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Api:C:\app:rw
+    - C:\Users\Celil Ercan\onecoremsvsmon\16.11.1197.0:C:\remote_debugger:ro
+    - C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager:C:\src:rw
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+    - C:\Users\Celil Ercan\.nuget\packages:c:\.nuget\packages:ro
+  kibana:
+    image: kibana
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+    - published: 6379
+      target: 6379
+    restart: always
+version: '3.4'

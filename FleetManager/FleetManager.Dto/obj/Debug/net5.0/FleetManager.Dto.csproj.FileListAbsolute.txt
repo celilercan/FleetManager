@@ -1,0 +1,15 @@
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\bin\Debug\net5.0\FleetManager.Dto.deps.json
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\bin\Debug\net5.0\FleetManager.Dto.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\bin\Debug\net5.0\ref\FleetManager.Dto.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\bin\Debug\net5.0\FleetManager.Dto.pdb
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.csproj.AssemblyReference.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.AssemblyInfoInputs.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.AssemblyInfo.cs
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.csproj.CoreCompileInputs.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\ref\FleetManager.Dto.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.pdb
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\bin\Debug\net5.0\FleetManager.Common.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\bin\Debug\net5.0\FleetManager.Common.pdb
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Dto\obj\Debug\net5.0\FleetManager.Dto.csproj.CopyComplete

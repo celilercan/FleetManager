@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  redis:
+    container_name: redis
+    restart: always   
+    ports:
+      - "6379:6379"
+  fleetmanager.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - redis
+    ports:
+      - "8000:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro

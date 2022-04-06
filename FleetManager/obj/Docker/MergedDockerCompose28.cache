@@ -1,0 +1,82 @@
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+      xpack.monitoring.enabled: "true"
+      xpack.security.enabled: "false"
+      xpack.watcher.enabled: "false"
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+    ports:
+    - published: 9200
+      target: 9200
+    restart: always
+    volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data:rw
+  fleetmanager.api:
+    build:
+      context: C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager
+      dockerfile: FleetManager.Api\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: FleetManager.Api
+      target: base
+    container_name: FleetManager.Api
+    depends_on:
+      elasticsearch:
+        condition: service_started
+      kibana:
+        condition: service_started
+      redis:
+        condition: service_started
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: fleetmanagerapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "C:\app\bin\Debug\net5.0\FleetManager.Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - published: 8000
+      target: 80
+    volumes:
+    - C:\Users\Celil Ercan\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Celil Ercan\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Api:C:\app:rw
+    - C:\Users\Celil Ercan\onecoremsvsmon\16.11.1197.0:C:\remote_debugger:ro
+    - C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager:C:\src:rw
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+    - C:\Users\Celil Ercan\.nuget\packages:c:\.nuget\packages:ro
+  kibana:
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_started
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    image: docker.elastic.co/kibana/kibana:7.9.2
+    ports:
+    - published: 5601
+      target: 5601
+    restart: on-failure
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+    - published: 6379
+      target: 6379
+    restart: always
+version: '3.4'
+volumes:
+  elasticsearch-data: {}

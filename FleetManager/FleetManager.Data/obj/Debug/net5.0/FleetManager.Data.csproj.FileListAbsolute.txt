@@ -1,0 +1,17 @@
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\FleetManager.Data.deps.json
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\FleetManager.Data.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\ref\FleetManager.Data.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\FleetManager.Data.pdb
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\FleetManager.Dto.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\FleetManager.Dto.pdb
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.csproj.AssemblyReference.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.AssemblyInfoInputs.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.AssemblyInfo.cs
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.csproj.CoreCompileInputs.cache
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.csproj.CopyComplete
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\ref\FleetManager.Data.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\obj\Debug\net5.0\FleetManager.Data.pdb
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\FleetManager.Common.dll
+C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager\FleetManager.Data\bin\Debug\net5.0\FleetManager.Common.pdb

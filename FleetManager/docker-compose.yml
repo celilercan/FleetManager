@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  redis:
+    image: redis
+  fleetmanager.api:
+    image: ${DOCKER_REGISTRY-}fleetmanagerapi
+    build:
+      context: .
+      dockerfile: FleetManager.Api\Dockerfile

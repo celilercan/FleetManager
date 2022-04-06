@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "k8G+UByblRfYB+QMAJl9cc2EVPJuNI5O0PMIdDQdwKnZOUpspELRhGV1fTXYND4eDqLU1YZ0HmS3gfZkx9EpNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Celil Ercan\\Documents\\GitHub\\CelilErcan\\FleetManager\\FleetManager.Dto\\FleetManager.Dto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Celil Ercan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

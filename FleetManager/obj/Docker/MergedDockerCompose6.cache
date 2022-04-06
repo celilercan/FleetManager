@@ -1,0 +1,62 @@
+networks:
+  elastic:
+    driver: bridge
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+      xpack.monitoring.enabled: "true"
+      xpack.watcher.enabled: "false"
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+    networks:
+      elastic: {}
+    ports:
+    - published: 9200
+      target: 9200
+    volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data:rw
+  fleetmanager.api:
+    build:
+      context: C:\Users\Celil Ercan\Documents\GitHub\CelilErcan\FleetManager
+      dockerfile: FleetManager.Api\Dockerfile
+    depends_on:
+      elasticsearch:
+        condition: service_started
+      kibana:
+        condition: service_started
+      redis:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: fleetmanagerapi
+    ports:
+    - published: 8000
+      target: 80
+    volumes:
+    - C:\Users\Celil Ercan\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Celil Ercan\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  kibana:
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_started
+    environment:
+      ELASTICSEARCH_URL: http://localhost:9200
+    image: docker.elastic.co/kibana/kibana:7.9.2
+    networks:
+      elastic: {}
+    ports:
+    - published: 5601
+      target: 5601
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+    - published: 6379
+      target: 6379
+    restart: always
+version: '3.4'
+volumes:
+  elasticsearch-data: {}

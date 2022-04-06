@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManager.Api", "FleetManager.Api\FleetManager.Api.csproj", "{CC71EADA-5D0B-4D86-B699-71A138E29175}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{64DC2D61-7CF2-40DE-B43B-2616E081E9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManager.Data", "FleetManager.Data\FleetManager.Data.csproj", "{657026F3-728B-47DD-BC6B-D2BBAC8E232A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManager.Dto", "FleetManager.Dto\FleetManager.Dto.csproj", "{9C3FDAFA-622C-435F-9656-7C1A9386DD54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManager.Service", "FleetManager.Service\FleetManager.Service.csproj", "{F04F9A7E-2DC2-42D7-822E-DA29AF4D1FB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManager.Common", "FleetManager.Common\FleetManager.Common.csproj", "{6CCAA551-B138-45D4-91D7-2E7FCE853B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManager.Test", "FleetManager.Test\FleetManager.Test.csproj", "{E2174774-15B2-4496-8813-E2FBD30D8CE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC71EADA-5D0B-4D86-B699-71A138E29175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC71EADA-5D0B-4D86-B699-71A138E29175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC71EADA-5D0B-4D86-B699-71A138E29175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC71EADA-5D0B-4D86-B699-71A138E29175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DC2D61-7CF2-40DE-B43B-2616E081E9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DC2D61-7CF2-40DE-B43B-2616E081E9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DC2D61-7CF2-40DE-B43B-2616E081E9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DC2D61-7CF2-40DE-B43B-2616E081E9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{657026F3-728B-47DD-BC6B-D2BBAC8E232A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657026F3-728B-47DD-BC6B-D2BBAC8E232A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657026F3-728B-47DD-BC6B-D2BBAC8E232A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657026F3-728B-47DD-BC6B-D2BBAC8E232A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3FDAFA-622C-435F-9656-7C1A9386DD54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3FDAFA-622C-435F-9656-7C1A9386DD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3FDAFA-622C-435F-9656-7C1A9386DD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3FDAFA-622C-435F-9656-7C1A9386DD54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04F9A7E-2DC2-42D7-822E-DA29AF4D1FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04F9A7E-2DC2-42D7-822E-DA29AF4D1FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04F9A7E-2DC2-42D7-822E-DA29AF4D1FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04F9A7E-2DC2-42D7-822E-DA29AF4D1FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCAA551-B138-45D4-91D7-2E7FCE853B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCAA551-B138-45D4-91D7-2E7FCE853B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCAA551-B138-45D4-91D7-2E7FCE853B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCAA551-B138-45D4-91D7-2E7FCE853B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2174774-15B2-4496-8813-E2FBD30D8CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2174774-15B2-4496-8813-E2FBD30D8CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2174774-15B2-4496-8813-E2FBD30D8CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2174774-15B2-4496-8813-E2FBD30D8CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B77309D2-C7E2-4A7F-99CC-0307660D213B}
+	EndGlobalSection
+EndGlobal

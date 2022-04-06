@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FleetManager.Test": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
